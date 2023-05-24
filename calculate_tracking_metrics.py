@@ -6,10 +6,10 @@ import argparse
 def motMetricsEnhancedCalculator(gtSource, tSource):  
     # load ground truth
     gt = np.loadtxt(gtSource, delimiter=' ')
-
+    print(gt[:5])
     # load tracking output
     t = np.loadtxt(tSource, delimiter=' ')
-
+    print(t[:5])
     # Create an accumulator that will be updated during each frame
     acc = mm.MOTAccumulator(auto_id=True)
 
