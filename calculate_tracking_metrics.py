@@ -3,8 +3,7 @@ import motmetrics as mm
 import numpy as np
 import argparse
 
-def motMetricsEnhancedCalculator(gtSource, tSource):
-  
+def motMetricsEnhancedCalculator(gtSource, tSource):  
     # load ground truth
     gt = np.loadtxt(gtSource, delimiter=' ')
 
